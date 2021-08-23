@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['trojanmeme.py'],
-             pathex=['C:\\Users\\gargm\\Documents\\GitHub\\trojanmeme'],
+             pathex=['C:\\Users\\user\\Documents\\GitHub\\trojanmeme'],
              binaries=[],
              datas=[],
              hiddenimports=[],
